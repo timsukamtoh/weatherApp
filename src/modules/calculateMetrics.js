@@ -7,9 +7,12 @@ function getTempF(kelvin){
 function getMph(speed){
     return Math.round(speed*2.237) + ' mph'
 }
-
+function getKph(speed){
+    return Math.round(speed*3.6) + ' kph'
+}
 export{
     getMph,
-    getTempC,
-    getTempF
+    getKph,
+    getTempF,
+    getTempC
 }

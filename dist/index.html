@@ -22,18 +22,19 @@
                 <h3 id="forecast">Rainy</h3>
             </div>
             <img src="../src/icons/rainy-day.png" class="icon" id="weatherIcon">
-            <h1 id="temp">62&deg;F</h1>
+            <h1><button id="temp">62&deg;F</button></h1>
             <div class="misc-info">
-                <div id="feelsLike">Feels Like: 62</div>
+                <div id="feelsLike">Feels Like: 62&deg;F</div>
                 <div id="wind">Wind: 61 mph</div>
                 <div id="humidity">Humidity: 58%</div>
             </div>
         </div>
-        <div id="searchForm">
-            <input class="input" type="text" id="searchBar">
+        <div id="searchArea">
+            <input class="input" type="text" id="searchBar" autocomplete="off">
             <button class="btn" id="searchBtn"><img src="../src/icons/magnify.png"></button>
+            <span class="error" id="searchError">You must search by name of city</span>
         </div>
-        <span class="error" id="searchError"></span>
+        
     </div>
     <footer class="footer">Copyright<p>&copy;</p>2023 timtoh168</footer>
     <script src="./main.js"></script>
