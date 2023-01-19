@@ -7,9 +7,35 @@
     <title>Weather App</title>
 </head>
 <body>
-    <img>
-    <input id="searchBar" type="text">
-    <button id="searchBtn">Search</button>
+    <header>
+        <div class="header">
+            <div class="label">
+                <img src="../src/icons/weather-partly-cloudy.png" class="logo">
+                <h1>Weather App</h1>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="weather-display">
+            <div class="top-row">
+                <h2 id="location">Los Angeles</h2>
+                <h3 id="forecast">Rainy</h3>
+            </div>
+            <img src="../src/icons/rainy-day.png" class="icon" id="weatherIcon">
+            <h1 id="temp">62&deg;F</h1>
+            <div class="misc-info">
+                <div id="feelsLike">Feels Like: 62</div>
+                <div id="wind">Wind: 61 mph</div>
+                <div id="humidity">Humidity: 58%</div>
+            </div>
+        </div>
+        <div id="searchForm">
+            <input class="input" type="text" id="searchBar">
+            <button class="btn" id="searchBtn"><img src="../src/icons/magnify.png"></button>
+        </div>
+        <span class="error" id="searchError"></span>
+    </div>
+    <footer class="footer">Copyright<p>&copy;</p>2023 timtoh168</footer>
     <script src="./main.js"></script>
 </body>
 </html>
